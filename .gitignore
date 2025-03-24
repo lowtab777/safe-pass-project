@@ -1,0 +1,135 @@
+# ASP.NET Core
+bin/
+obj/
+*.db
+*.db-journal
+*.pdb
+*.log
+*.cache
+*.ide
+*.user
+*.vs/
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+appsettings.*.json
+secrets.json
+.env
+.env.*
+
+# Angular
+node_modules/
+dist/
+out-tsc/
+*.log
+angular.json
+*.iml
+*.iws
+*.bak
+*.swp
+*.tmp
+*.gz
+*.zip
+.DS_Store
+*.orig
+.idea/
+
+# Docker
+**/docker-compose*.yml
+**/docker-compose.override.yml
+**/.dockerignore
+docker-compose.*
+*.container.cache
+**/*/Dockerfile
+.docker/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userprefs
+*.csproj.user
+*.dbmdl
+*.jfm
+*.lock.json
+
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+*.vscode-test
+
+# Entity Framework Core
+Migrations/
+**/*.bak
+*.mdf
+*.ldf
+*.ndf
+
+# NPM / Yarn
+node_modules/
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+.npmrc
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# IDE Specific
+.idea/
+*.iml
+*.iws
+*.launch
+
+# Environment Secrets
+.env
+.env.*
+secrets.json
+
+# Coverage and Test
+coverage/
+*.coverage
+*.testresults
+TestResults/
+
+# Rider IDE
+.idea/
+.idea_modules/
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/**/tasks.xml
+.idea/**/workspace.xml
+
+# Backup Files
+*.bak
+*.old
+*.tmp
+*.temp
+*.swp
+
+# Output Builds
+build/
+out/
+*.out
+*.obj
+
+# Miscellaneous
+Thumbs.db
+ehthumbs.db
+*.stackdump
