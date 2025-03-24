@@ -1,0 +1,6 @@
+@SafePassAppBackend_HostAddress = http://localhost:5182
+
+GET {{SafePassAppBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
