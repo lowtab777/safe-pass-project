@@ -1,6 +1,0 @@
-@SafePassApp_HostAddress = http://localhost:5215
-
-GET {{SafePassApp_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
