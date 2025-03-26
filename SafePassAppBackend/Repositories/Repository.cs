@@ -40,7 +40,7 @@ namespace SafePassAppBackend.Repositories
             return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public async Task<T?> GetById(Tkey id) // где проверять на null - тут или в сервисе (мне кажеться в сервисе)
+        public async Task<T?> GetById(Tkey id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
