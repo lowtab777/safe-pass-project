@@ -14,7 +14,7 @@ namespace SafePassAppBackend.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<T> Add(T item)
+        public async Task<T> AddAsync(T item)
         {
             var res = await _dbContext.Set<T>().AddAsync(item);
             return res.Entity;
@@ -30,17 +30,17 @@ namespace SafePassAppBackend.Repositories
             _dbContext.Set<T>().Remove(item);
         }
 
-        public async Task<ICollection<T>> Find(Expression<Func<T, bool>> expression)
+        public IQueryable<T> Find(Expression<Func<T, bool>> expression)
         {
-            return await _dbContext.Set<T>().Where(expression).ToListAsync();
+            return _dbContext.Set<T>().Where(expression).AsQueryable();
         }
 
-        public async Task<ICollection<T>> GetAll()
+        public async Task<ICollection<T>> GetAllAsync()
         {
             return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public async Task<T?> GetById(Tkey id)
+        public async Task<T?> GetByIdAsync(Tkey id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
