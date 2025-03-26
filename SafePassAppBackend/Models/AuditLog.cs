@@ -1,6 +1,6 @@
 ﻿namespace SafePassAppBackend.Models
 {
-    public class UserRoles
+    public class AuditLog
     {
     }
 }
